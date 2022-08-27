@@ -1,0 +1,126 @@
+@charset 'UTF-8';
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+html, body{
+    min-height: 100vh;
+    background-color: darkgray;
+    font-family: var(--fonte1);
+ }
+
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+
+:root{
+    --cor1:#590E22;
+    --cor2:#F2A7BB;
+    --cor3:#D9043D;
+    --fonte1:'Alfa Slab One' cursive;
+}
+
+/*Cabeçalho*/
+
+header{
+    background-color: var(--cor2);
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom:30px;
+    color: white;
+    
+}
+
+header > h1{
+    padding: 3px;
+    font-family: var(--fonte1);
+    font-size: 3.5vw;
+    font-variant: small-caps;
+}
+
+header > p{
+    color: white;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+ul{
+    display: flex;
+    padding: 3px;
+    list-style-type: none;
+}
+
+li{
+    padding: 10px;
+    border: 1px solid  white;
+    border-radius: 40px;
+    margin: 0px 5px;
+}
+
+li:hover{
+    color: var(--cor3);
+    border: 1px solid var(--cor3);
+}
+
+/*Conteúdo*/
+
+section{
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+    font-size: 3vw;
+}
+
+section > p{
+    padding-bottom: 1em;
+}
+
+section.normal{
+    background-color: white;
+    color: black;
+}
+
+section.imagen{
+    background-color: rgba(0, 0, 0, 0.349);
+    color:white;
+    box-shadow: inset 6px 6px 0px rgba(0, 0, 0, 0.027);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: right center;
+}
+
+section.imagen > p{
+    display: inline-block;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.137);
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.568);
+}
+
+section#img1{
+    background-image: url('../imagens/background001.jpg');
+}
+
+section#img2{
+    background-image: url('../imagens/background002.jpg');
+}
+
+section#img3{
+    background-image: url('../imagens/background003.jpg');
+}
+
+/*Footer*/
+footer{
+    background-color: #F2A7BB;
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
